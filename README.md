@@ -58,22 +58,22 @@ All visualizations are saved as interactive HTML files for offline viewing.
 The project produces the following interactive charts:
 
 1. Top 10 Netflix Content Genres (Bar Chart)  
-   `genre_distribution_bar_chart.html`
+   `http://localhost:63342/DMV600/NetflixDA/genre_distribution_bar_chart.html?_ijt=lvjo0medalt5lordd4qav802n2&_ij_reload=RELOAD_ON_SAVE'
 
 2. Titles Added Over Time (Line Chart)  
-   `content_added_timeline.html`
+   `http://localhost:63342/DMV600/NetflixDA/content_added_timeline.html?_ijt=821c01h5d73vfgevlrrg40arfg&_ij_reload=RELOAD_ON_SAVE`
 
 3. Movies vs TV Shows Proportion (Pie Chart)  
-   `content_type_proportion_pie_chart.html`
+   `http://localhost:63342/DMV600/NetflixDA/content_type_proportion_pie_chart.html?_ijt=821c01h5d73vfgevlrrg40arfg&_ij_reload=RELOAD_ON_SAVE`
 
 4. Movie Duration vs Release Year (Scatter Plot)  
-   `movie_duration_scatter_plot.html`
+   `http://localhost:63342/DMV600/NetflixDA/movie_duration_scatter_plot.html?_ijt=3tourt6reavn674367verrho4b&_ij_reload=RELOAD_ON_SAVE`
 
 5. TV Show Duration vs Release Year (Scatter Plot)  
-   `tvshow_duration_scatter_plot.html`
+   `http://localhost:63342/DMV600/NetflixDA/tvshow_duration_scatter_plot.html?_ijt=vrivpnogasrtnpvj67mnt7at6b&_ij_reload=RELOAD_ON_SAVE`
 
 6. Global Content Production by Country (Choropleth Map)  
-   `content_production_choropleth_map.html`
+   `http://localhost:63342/DMV600/NetflixDA/content_production_choropleth_map.html?_ijt=8p4nj5rvb27r9popgu87a02oa3&_ij_reload=RELOAD_ON_SAVE`
 
 ---
 
