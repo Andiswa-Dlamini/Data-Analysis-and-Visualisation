@@ -3,8 +3,8 @@
 ````md
 # Exploratory Data Analysis of Netflix Titles
 
-##  Project Overview
-This project performs an exploratory data analysis (EDA) on the Netflix Titles dataset using **Python**, **pandas**, and **Plotly**.  
+ Project Overview
+This project performs an exploratory data analysis (EDA) on the Netflix Titles dataset using Python, pandas, and Plotly.  
 The goal is to clean the dataset, handle mixed date formats, and generate interactive visualizations to uncover trends in Netflix content.
 
 The analysis focuses on:
@@ -14,15 +14,15 @@ The analysis focuses on:
 - Content duration trends
 - Global content production by country
 
-All visualizations are saved as **interactive HTML files** for offline viewing.
+All visualizations are saved as interactive HTML files for offline viewing.
 
 ---
 
-##  Dataset
-- **Name:** Netflix Titles Dataset
-- **Source:** Public Netflix dataset (CSV format)
-- **Encoding:** ISO-8859-1
-- **Key Columns Used:**
+  Dataset
+- Name: Netflix Titles Dataset
+- Source: Public Netflix dataset (CSV format)
+- Encoding: ISO-8859-1
+- Key Columns Used:
   - `type`
   - `title`
   - `listed_in`
@@ -33,15 +33,15 @@ All visualizations are saved as **interactive HTML files** for offline viewing.
 
 ---
 
-##  Technologies Used
-- **Python**
-- **pandas** – data loading and cleaning
-- **Plotly Express** – interactive visualizations
-- **Plotly Offline** – saving charts as HTML files
+  Technologies Used
+- Python
+- pandas – data loading and cleaning
+- Plotly Express – interactive visualizations
+- Plotly Offline – saving charts as HTML files
 
 ---
 
-##  Data Cleaning & Preparation
+  Data Cleaning & Preparation
 - Standardized column names by replacing spaces with underscores
 - Split and expanded multi-value fields such as genres and countries
 - Cleaned and parsed the `date_added` column:
@@ -54,33 +54,33 @@ All visualizations are saved as **interactive HTML files** for offline viewing.
 
 ---
 
-##  Visualizations Generated
+  Visualizations Generated
 The project produces the following interactive charts:
 
-1. **Top 10 Netflix Content Genres** (Bar Chart)  
+1. Top 10 Netflix Content Genres (Bar Chart)  
    `genre_distribution_bar_chart.html`
 
-2. **Titles Added Over Time** (Line Chart)  
+2. Titles Added Over Time (Line Chart)  
    `content_added_timeline.html`
 
-3. **Movies vs TV Shows Proportion** (Pie Chart)  
+3. Movies vs TV Shows Proportion (Pie Chart)  
    `content_type_proportion_pie_chart.html`
 
-4. **Movie Duration vs Release Year** (Scatter Plot)  
+4. Movie Duration vs Release Year (Scatter Plot)  
    `movie_duration_scatter_plot.html`
 
-5. **TV Show Duration vs Release Year** (Scatter Plot)  
+5. TV Show Duration vs Release Year (Scatter Plot)  
    `tvshow_duration_scatter_plot.html`
 
-6. **Global Content Production by Country** (Choropleth Map)  
+6. Global Content Production by Country (Choropleth Map)  
    `content_production_choropleth_map.html`
 
 ---
 
-##  How to Run the Project
+  How to Run the Project
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/netflix-eda.git
+   git clone https://github.com/Andiswa-Dlamini/netflix-eda.git
 ````
 
 2. Install required libraries:
