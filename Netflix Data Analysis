@@ -1,5 +1,5 @@
 # Importing necessary libraries
-import pandas as pd # Source:
+import pandas as pd
 import plotly.express as px
 import plotly.offline as pyo
 
@@ -13,7 +13,7 @@ except FileNotFoundError:
     print("Error: netflix_titles.csv not found.")
     # Exiting the script if the file is not found.
     exit()
-# C:\Users\adlam\PycharmProjects\DMV600\netflix_titles.csv
+
 # Cleaning column names by replacing spaces with underscores for easier attribute access
 df.columns = df.columns.str.replace(' ', '_')
 
@@ -33,7 +33,7 @@ fig1 = px.bar(top_10_genres, x='Genre', y='Count',
               title='Top 10 Netflix Content Genres')
 
 # Saving the figure as an HTML file for offline viewing
-pyo.plot(fig1, filename='genre_distribution_bar_chart.html')
+pyo.plot(fig1, filename='results/genre_distribution_bar_chart.html')
 
 # Visualizing when content was added to Netflix over time using a line chart
 # Converting 'date_added' column to datetime objects for proper time-series analysis
@@ -57,7 +57,7 @@ fig2 = px.line(monthly_additions_df, x='Date', y='Count',
               title='Number of Titles Added to Netflix Over Time')
 
 # Saving the figure as an HTML file
-pyo.plot(fig2, filename='content_added_timeline.html') # Source:
+pyo.plot(fig2, filename='results/content_added_timeline.html')
 
 # Comparing the proportion of movies versus TV shows available on Netflix
 
@@ -72,13 +72,13 @@ fig3 = px.pie(type_counts, values='Count', names='Type',
 fig3.update_traces(textposition='inside', textinfo='percent+label')
 
 # Saving the figure as an HTML file (generic plot save)
-pyo.plot(fig3, filename='content_type_proportion_pie_chart.html')
+pyo.plot(fig3, filename='results/content_type_proportion_pie_chart.html')
 
 
 # Analyzing content length trends using a scatter plot
 
 # Filtering the DataFrame to include only entries of type 'Movie'
-movies_df = df[df['type'] == 'Movie'].copy() # Source:
+movies_df = df[df['type'] == 'Movie'].copy()
 # Converting the 'duration' string to an integer representing minutes for movies
 movies_df['duration_minutes'] = movies_df['duration'].str.replace(' min', '', regex=False).astype(int)
 
@@ -89,7 +89,7 @@ fig4_movies = px.scatter(movies_df, x='release_year', y='duration_minutes',
                          labels={'release_year': 'Release Year', 'duration_minutes': 'Duration (minutes)'})
 
 # Saving the scatter plot for movies as an HTML file
-pyo.plot(fig4_movies, filename='movie_duration_scatter_plot.html')
+pyo.plot(fig4_movies, filename='results/movie_duration_scatter_plot.html')
 
 # Filtering the DataFrame to include only entries of type 'TV Show'
 tv_shows_df = df[df['type'] == 'TV Show'].copy()
@@ -103,7 +103,7 @@ fig4_tvshows = px.scatter(tv_shows_df, x='release_year', y='duration_seasons',
                           labels={'release_year': 'Release Year', 'duration_seasons': 'Duration (seasons)'})
 
 # Saving the scatter plot for TV shows as an HTML file
-pyo.plot(fig4_tvshows, filename='tvshow_duration_scatter_plot.html')
+pyo.plot(fig4_tvshows, filename='results/tvshow_duration_scatter_plot.html')
 
 # Plotting a choropleth map to show the distribution of content production by country
 # Removing rows where 'country' information is missing
@@ -138,5 +138,5 @@ fig5.update_layout(
 )
 
 # Saving the choropleth map as an HTML file
-pyo.plot(fig5, filename='content_production_choropleth_map.html')
+pyo.plot(fig5, filename='results/content_production_choropleth_map.html')
 
