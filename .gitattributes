@@ -1,7 +1,5 @@
-# Exclude the 'docs' folder from language statistics
-docs/* linguist-documentation
+# Exclude generated HTML outputs from language stats
+*.html linguist-detectable=false
 
-# Exclude a specific HTML file
-specific-file.html linguist-detectable=false
-
-*.myext linguist-language=Python
+# Mark notebooks or scripts as Python 
+*.py linguist-language=Python
